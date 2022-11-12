@@ -1,2 +1,2 @@
 # slayers_hut_shop
-E-commerce
+E-commerce based on k8, tr
