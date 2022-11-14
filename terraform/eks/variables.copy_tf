@@ -1,3 +1,10 @@
+locals {
+remote_state_s3_bucket = "terraform-aws-eks-${var.project}-s3-remote-lock-xcode"
+remote_state_dynamodb_table = "terraform-aws-eks-${var.project}-dynamodb-remote-lock"
+key = "terraform-aws-eks-${var.project}.tfstate"
+#project = var.project
+}
+
 variable "aws_access_key" {
   description = "AWS access key"
   type        = string
@@ -42,7 +49,7 @@ variable "tags" {
   description = "A map of tags to add to all resources"
   type        = map(string)
   default = {
-    "Project"     = "slayers-hut"
+    "Project"     = "slayers_hut_shop"
     "Environment" = "Dev"
     "Owner"       = "Tomi Xc0de"
   }
