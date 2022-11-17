@@ -1,5 +1,8 @@
 #*.terraform
 #./terraform/eks/.terraform/
 #**./terraform/eks/*/
-/home/xc0de/devops/slayers_hut_shop/terraform/eks/.terraform.lock.hcl
+#/home/xc0de/devops/slayers_hut_shop/terraform/eks/.terraform.lock.hcl
+#
+.*
+!/.gitignore
 
